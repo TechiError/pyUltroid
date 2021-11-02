@@ -5,11 +5,9 @@
 # PLease read the GNU Affero General Public License in
 # <https://github.com/TeamUltroid/pyUltroid/blob/main/LICENSE>.
 
-import uvloop
-
-uvloop.install()
-
 import time
+
+import uvloop
 
 from .configs import Var
 from .startup import *
@@ -18,6 +16,9 @@ from .startup.BaseClient import UltroidClient
 from .startup.connections import session_file, vc_connection, where_hosted
 from .startup.funcs import autobot
 from .version import ultroid_version
+
+uvloop.install()
+
 
 start_time = time.time()
 _ult_cache = {}
