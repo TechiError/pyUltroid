@@ -8,8 +8,8 @@
 import os
 import sys
 import time
-from uvloop import install
-install()
+from uvloop import install as install_uvloop
+install_uvloop()
 from . import *
 from .functions.helper import time_formatter, updater
 from .startup.funcs import autopilot, customize, plug, ready, startup_stuff
